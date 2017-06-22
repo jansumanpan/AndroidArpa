@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomnav_menu_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/bottomnav_menu_search"
+        android:icon="@drawable/ic_remove_red_eye_black_24dp"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/bottomnav_menu_groups"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="@string/group" />
+
+    <item
+        android:id="@+id/bottomnav_menu_watch"
+        android:icon="@drawable/sunglasses"
+        android:title="@string/watch" />
+    <item
+        android:id="@+id/bottomnav_menu_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/profile" />
+
+</menu>

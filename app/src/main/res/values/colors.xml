@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main -->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#5aeaca</color>
+    <!-- Extra -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#CCCCCC</color>
+
+    <!-- Floating Action Button -->
+    <color name="colorAccentRipple">#425aeaca</color>
+    <color name="colorAccentRipple2">#99ffffff</color>
+    <color name="colorAccentPressed">#6ce9cd</color>
+
+</resources>

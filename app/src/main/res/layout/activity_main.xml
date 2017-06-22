@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context="com.whatsbestapp.nexusbond.whatsbestapp.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_layout_linear"
+        android:animateLayoutChanges="true"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:stateListAnimator="@drawable/main_toolbar_shadow"
+            android:animateLayoutChanges="true"
+
+            >
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/appbar_height"
+                android:minHeight="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                android:visibility="invisible"
+                android:animateLayoutChanges="true">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/AppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:animateLayoutChanges="true"
+                    />
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/fragment_profile_layout"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:animateLayoutChanges="true"
+                    android:name="com.whatsbestapp.nexusbond.whatsbestapp.ProfileLayout"
+                    />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/main_layout_frame"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:animateLayoutChanges="true"
+            />
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:id="@+id/main_view_bottomnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            app:itemIconTint="@drawable/view_bottomnav_selector"
+            app:itemTextColor="@drawable/view_bottomnav_selector"
+            app:menu="@menu/view_bottomnav_menu"
+            />
+    </LinearLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/main_menu_FloatingAction"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_anchor="@id/main_view_bottomnav"
+        android:layout_marginBottom="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_size="normal"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorRipple="@color/colorAccentRipple2"
+        app:menu_colorPressed="@color/colorAccentPressed"
+        app:menu_showShadow="true"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+
+       >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorRipple="@color/colorAccentRipple2"
+            app:fab_colorPressed="@color/colorAccentPressed"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+           />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
